@@ -1,0 +1,100 @@
+h1 {
+	font-family: Brandon grotesque,bold;
+	font-weight: bold;
+	text-align: center;
+  color: #ffff80;
+	font-size: 100px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-shadow: 5px 5px black;
+}
+
+h3 {
+	font-family: Brandon grotesque, lighter;
+	font-size: 65px;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #000000;
+}
+
+
+h4 {
+	font-family: brandon grotesque,lighter;
+	font-size: 30px;
+	color: #000000;
+}
+
+ul {
+	padding-bottom: 50px;
+	font-family: brandon grotesque,lighter;
+	color: #000000;
+}
+
+li {font-family: brandon grotesque,lighter;
+	color: #000000
+	font-size: 30px;
+}
+
+footer {
+  text-align: center;
+  align-items: center;
+  font-family: Brandon grotesque;
+}
+
+.sidebar {
+        grid-area: sidebar;
+    	background: url(https://www.hellmanns.com/etc/ui/hellmanns/clientlibs/core/core/images/recipe-detail/bg-pattern-body.jpg) no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+ 		 background-size: cover;
+ 	}
+
+    .content {
+        grid-area: content;
+        color: green;
+    }
+
+    .header {
+        grid-area: header;
+	}
+
+	  .main {
+		grid-column-start: main-start;
+		grid-column-end: main-end;
+	}
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 400px 400px;
+        grid-template-areas:
+    	  "header    header"
+    	  "main 		 main"
+        "sidebar	 content"
+        "footer		 footer";
+        background-color: #fff;
+        color: #444;
+    }
+
+
+
+
+.box {
+  background-color: #99ffff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 100%;
+}
+
+.header,
+.footer {
+  background-color: #999;
+} 
+

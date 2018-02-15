@@ -1,0 +1,131 @@
+h1 {
+	font-family: Brandon grotesque,bold;
+	font-weight: bold;
+	text-align: center;
+	color: #ffff80;
+	font-size: 100px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-shadow: 5px 5px black;
+	
+}
+
+h3 {
+	font-family: Brandon grotesque, lighter;
+	font-size: 65px;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #000000;
+}
+
+h4 {
+	font-family: brandon grotesque,lighter;
+	font-size: 30px;
+	color: #000000;
+}
+
+ul {
+	font-family: brandon grotesque,lighter;
+	color: black;
+	font-size: 18px;
+} 
+
+li {
+	font-family: brandon grotesque,lighter;
+	color: black;
+	font-size: 18px;
+}
+
+footer {
+	font-family: brandon grotesque;
+	font-size: 80px;
+	align-items: center;
+	text-align: center;
+
+}
+
+.main-head {
+	grid-area: header;
+}
+
+.sub-head {
+	grid-area: subheader;
+}
+.content {
+	grid-area: main;
+}
+
+.side {
+	grid-area: sidebar;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		"header"
+		"subheader"
+		"main"
+		"sidebar"
+		"footer";
+}
+
+@media (min-width: 500px) {
+	.wrapper {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header		header"
+			"subheader	subheader"
+			"sidebar 	main"
+			"footer		footer";
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 700px) {
+	.wrapper {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"header		header		header"
+		"subheader 	subheader 	subheader"
+		"sidebar	main 		main"
+		"footer		footer		footer"
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+}
+
+.box {
+	background-color: #99ffff;
+	color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 100%;
+
+}
+
+
+.header,
+.footer {
+	background-color: gray;
+
+}
+
+.footer {
+	color: black;
+	font-size: 60px
+}
+
+
